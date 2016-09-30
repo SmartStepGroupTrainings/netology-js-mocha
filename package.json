@@ -1,0 +1,24 @@
+{
+  "name": "mocha-unit-testing",
+  "version": "1.0.0",
+  "description": "Mocha unit testing examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartStepGroupTrainings/netology-js-mocha.git"
+  },
+  "keywords": [
+    "mocha",
+    "unittests",
+    "js"
+  ],
+  "author": "DP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartStepGroupTrainings/netology-js-mocha/issues"
+  },
+  "homepage": "https://github.com/SmartStepGroupTrainings/netology-js-mocha#readme"
+}
