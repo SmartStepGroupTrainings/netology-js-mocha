@@ -4,7 +4,7 @@
   "description": "Mocha unit testing examples",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node_modules/mocha/bin/mocha -R spec"
   },
   "repository": {
     "type": "git",
