@@ -1,15 +1,23 @@
-
 var Converter = require('../src/converter');
+var Pallete = require('../src/pallete');
 var assert = require('chai').assert;
 
 describe('When getting default pallete', function() {
-  it('return 3 colors', function() {
-    var converter = new Converter();
+    var defaultPallette = {};
 
-    var pallete = converter.getPallete();
+    beforeEach(function() {
+        defaultPallette = new Pallete();
+    });
 
-    assert.equal(pallete[0], "red");
-    assert.equal(pallete[1], "green");
-    assert.equal(pallete[2], "blue");
-  });
+    it('return 3 colors', function() {
+      console.log(defaultPallette);
+
+        var converter = new Converter(defaultPallette);
+
+        var pallete = converter.getPallete();
+
+        assert.equal(pallete[0], "red");
+        assert.equal(pallete[1], "green");
+        assert.equal(pallete[2], "blue");
+    });
 });
