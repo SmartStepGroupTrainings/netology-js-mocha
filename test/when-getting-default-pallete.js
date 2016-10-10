@@ -10,8 +10,6 @@ describe('When getting default pallete', function() {
     });
 
     it('return 3 colors', function() {
-      console.log(defaultPallette);
-
         var converter = new Converter(defaultPallette);
 
         var pallete = converter.getPallete();
