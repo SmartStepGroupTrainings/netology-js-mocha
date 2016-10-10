@@ -10,7 +10,7 @@ describe('Pallete should', function() {
         assert.deepEqual(colors, ["red", "green", "blue"]);
     });
 
-    it('async return default collection with 3 colors', function(done) {
+    it('return default collection with 3 colors using async call', function(done) {
         var pallete = new Pallete();
 
         var colors = pallete.getPalleteAsync(function(colors) {
@@ -19,7 +19,7 @@ describe('Pallete should', function() {
         });
     });
 
-    it('async promise return default collection with 3 colors', function() {
+    it('return default collection with 3 colors using async promise', function() {
         var pallete = new Pallete();
 
         return pallete.getPalleteAsyncPromise().then(function(result) {
