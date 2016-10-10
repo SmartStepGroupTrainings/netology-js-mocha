@@ -18,4 +18,12 @@ describe('Pallete should', function() {
             done();
         });
     });
+
+    it('async promise return default collection with 3 colors', function() {
+        var pallete = new Pallete();
+
+        return pallete.getPalleteAsyncPromise().then(function(result) {
+            assert.deepEqual(result, ["red", "green", "blue"]);
+        });
+    });
 });
