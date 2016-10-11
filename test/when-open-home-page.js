@@ -2,7 +2,7 @@ var supertest = require("supertest");
 var assert = require("chai").assert;
 var server = supertest.agent("http://localhost:3000");
 
-describe.only("When open home page", function() {
+describe("When open home page", function() {
     it("should return code 200 and hello message", function(done) {
         server
             .get("/")
