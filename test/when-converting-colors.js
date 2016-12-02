@@ -9,7 +9,7 @@ describe('When converting colors from hex to RGB', function() {
         defaultPallette = new Pallete();
     });
 
-    it('throw errror if hexColor length is less than 6 symbols', function() {
+    it('throw error if hexColor length is less than 6 symbols', function() {
         var converter = new Converter(defaultPallette);
 
         var action = () => {
